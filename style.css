@@ -1,15 +1,46 @@
 .container{
-    border: 1px black solid;
-    height: 500px;
-    width: 500px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.controls{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#favcolor{
+    width: 50px;
+    height: 50px;
+}
+
+.control{
+    padding: 10px;
+}
+
+.game-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .grid-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    background-color: white;
     height: 500px;
     width: 500px;
     display: flex;
-    border: 1px green solid;
     align-items: stretch;
+}
+
+.title{
+    font-size: 50px;
+    padding: 20px;
+    font-weight: 200px;
+    text-align: center;
+    font-family: 'Alfa Slab One';
 }
 
 .grid-row{
@@ -20,6 +51,15 @@ width: calc(100%);
 }
 
 .grid{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: calc(100%);
+    border-radius: 5px;
 }
+
+.hover {
+    background-color: yellow;
+  }
+
+  body{
+    background-color: gainsboro;
+  }

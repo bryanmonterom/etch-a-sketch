@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="grid-container">
-            
+        <div class="controls">
+            <div class="control">
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div>
+            <div class="control">
+                <label id="sliderValue"></label>
+            </div>
+            <div class="control">
+                <input class="slider" id="sizeSlider" type="range" value="10" min="1" max="64">
+            </div>
         </div>
-    </div>
+        <div class="game-container">
+        <label class="title">Etch-a-sketch</label>
+            <div class="grid-container">
+            </div>
+        </div>
+</div>
     
 </body>
 <script src="script.js"></script>
