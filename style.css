@@ -8,7 +8,7 @@
 
 .controls{
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 30px;
@@ -24,15 +24,16 @@
 }
 
 .game-container{
-display: flex;
-flex-direction: column;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .grid-container{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    background-color: white;
-    height: 500px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    background-color: white;
     width: 500px;
+    height: 500px;
     display: flex;
     align-items: stretch;
 }
@@ -40,55 +41,30 @@ justify-content: center;
 .title{
     font-size: 50px;
     padding: 20px;
-    font-weight: 200px;
+    font-weight: 200;
     text-align: center;
     font-family: 'Alfa Slab One';
 }
 
 .grid-row{
-display: flex;
-flex-direction: column;
-height: calc(100%);
-width: calc(100%);
+    display: flex;
+    flex-direction: column;
+    height: calc(100%);
+    width: calc(100%);
 }
 
 .grid{
-    /* border: 1px solid red; */
-    height: calc(100%);
+    height: calc(100px);
     border-radius: 5px;
 }
 
-.hover {
-    background-color: yellow;
-  }
-
-  body{
+body{
     background-color: gainsboro;
-  }
+}
 
-  .btnApply{
+.btnApply{
     width: 60px;
     height: 30px;
     background-color: #c0c0c0;
-    color: black;
     font-family: 'Alfa Slab One';
-  }
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}
