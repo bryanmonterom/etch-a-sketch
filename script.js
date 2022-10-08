@@ -42,6 +42,5 @@ function cleanGrid(){
     grids.forEach(a=> a.remove());
 }
 
-function applyColor(){}
 
 drawGrid();
