@@ -1,0 +1,25 @@
+.container{
+    border: 1px black solid;
+    height: 500px;
+    width: 500px;
+}
+
+.grid-container{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    border: 1px green solid;
+    align-items: stretch;
+}
+
+.grid-row{
+display: flex;
+flex-direction: column;
+height: calc(100%);
+width: calc(100%);
+}
+
+.grid{
+    border: 1px solid red;
+    height: calc(100%);
+}
