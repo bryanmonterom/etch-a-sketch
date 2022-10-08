@@ -3,6 +3,7 @@
     flex-direction: row;
     height: auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .controls{
@@ -72,3 +73,22 @@ width: calc(100%);
     color: black;
     font-family: 'Alfa Slab One';
   }
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
