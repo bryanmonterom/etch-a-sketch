@@ -1,4 +1,4 @@
-let populateGrid = (value)=>{
+let populateGrid = (value,color)=>{
     const gridContainer = document.querySelector('.grid-container');
     for (let index = 0; index < value; index++) {
         let gridRow = document.createElement('div');
@@ -7,9 +7,9 @@ let populateGrid = (value)=>{
 
        for (let j = 0; j < value; j++) {
         let grid = document.createElement('div');
-        grid.addEventListener('mouseover',()=>{ grid.classList.add('hover')})
+        grid.addEventListener('mouseover',()=>{ grid.style.backgroundColor = color/*classList.add('hover')*/})
         grid.classList.add('grid');
-        gridRow.appendChild(grid)
+        gridRow.appendChild(grid);
         ;
        }
     }
@@ -22,7 +22,9 @@ drawGrid();
 }
 
 let slider = document.getElementById('sizeSlider');
-slider.addEventListener('change',updateGrid);
+let color = document.getElementById('favcolor');
+
+slider.addEventListener('change',updateSliderValue);
 
 function updateSliderValue(){
     let sliderValue = document.querySelector('#sliderValue');
@@ -31,7 +33,7 @@ function updateSliderValue(){
 
 function drawGrid(){
     updateSliderValue();
-    populateGrid(slider.value);
+    populateGrid(slider.value, color.value);
 }
 
 function cleanGrid(){
@@ -40,5 +42,6 @@ function cleanGrid(){
     grids.forEach(a=> a.remove());
 }
 
+function applyColor(){}
 
 drawGrid();
